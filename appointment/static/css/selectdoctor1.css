@@ -1,0 +1,29 @@
+body{
+    background-image: linear-gradient(to left, rgba(230, 198, 225, 0), rgb(231, 158, 219));
+}
+.doctor {
+	text-align: left;
+	margin-top: 8%;
+	margin-left:750px;
+	margin-right: auto;
+	background:  #FFE4E1;
+	font-size: 15 px;
+	width: 400px;
+	padding: 25px 25px 25px 25px; 
+    border-radius: 10px;
+    font-size: x-large;
+
+	
+}
+.button {
+
+    background-color: #BC8F8F; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 10px;
+  }

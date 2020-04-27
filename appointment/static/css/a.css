@@ -1,0 +1,28 @@
+body{
+    background-color: lightskyblue;
+}
+.del{
+	text-align: left;
+    margin-top:300px;
+    align-self: center;
+	background:  rgb(141, 185, 196);
+	font-size: 15 px;
+	width: 200px;
+	padding: 25px 25px 25px 25px; 
+    border-radius: 10px;
+    font-size: x-large;
+
+	
+}
+.button {
+
+    background-color: rgb(148, 87, 127); /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 10px;
+  }

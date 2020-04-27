@@ -1,0 +1,23 @@
+body{
+
+	background-color: lightcyan;
+
+}
+
+form {
+	margin-top: 10%;
+}
+
+
+#button {
+
+  background-color: #2F4F4F; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+}

@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/bookappointment22.css' %}">
+</head>
+{% csrf_token %}
+<body>
+<div class='rece'>Appointment_id:{{appointment.appointment_id}}<br><br>
+Name:{{appointment.name}}<br><br>
+Hospital:{{appointment.hospital}}<br><br>
+Doctor:{{appointment.doctor}}<br><br>
+Date:{{appointment.appointment_date}}<br><br>
+Time:{{appointment.time}} <br><br>
+</div>
+<div class='button'>
+<a href="{% url 'home1' %}">Home</a></div>
+<div class='button1'><a href="{% url 'logoutuser' %}">Logout</a>
+</div>
+</body>
+</html>

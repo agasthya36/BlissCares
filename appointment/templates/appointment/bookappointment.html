@@ -1,0 +1,28 @@
+{% load static %}
+<html>
+	<head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/bookappointment.css' %}">        
+   	</head>
+
+   	<body>
+   		<div class="appointment">
+   		<form method="POST">
+			{% csrf_token %}
+			<h3>Book Appointment</h3>
+			<br>
+			<div class=container></div>
+			{% for i in form %}
+			<p>{{i.label}}:</p>
+			<p>{{i}}</p><br>
+			{% endfor %}
+		   
+			<input type="submit" name="submit1" id="button">
+		</div>
+		</form>
+		</div>
+		<br><br>
+		<a href="{% url 'home1' %}" id="button1">Home</a>
+   	</body>
+</html>

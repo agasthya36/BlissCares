@@ -1,0 +1,48 @@
+{% load static %}
+<html>
+	<head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/post_detail.css' %}">        
+   	</head>
+
+   	<body>
+   		{% for i in c %}
+		{{i.label}}{{i.created}} 
+		{{i.creater}}
+		{{i.description}}
+		{{i.vote}}
+		{% endfor %}
+		<div class='comment'>
+		<h1 style='font-size: 50px;'>{{p}}</h1>
+		<h4>{{p.description}}</h4>
+	</div>
+		<br><br>
+		<h2>Comments..</h2>
+		<div>
+		{% for j in e %}
+		<div  class="comment">
+		
+		<p style="font-size: small;">{{j.commenter}}</p>
+		<p style="font-size:large;">{{j.text}}</p>
+	</div><br><br>
+		{% endfor %}
+		</div>
+		<div class="vote">
+		<form method="POST">
+			{% csrf_token %}
+			<div class='text'>
+				<p>Enter Your Comments here...</p>
+			{{ form.text}}
+		</div>
+			<div class='myvote'>{{form.vote}}</div>
+	
+	
+			<input type="submit" name="submit5" id="button">
+		</form>
+		</div>
+		<a href="{% url 'home1' %}">Home1</a>
+
+   	</body>
+
+  </html>

@@ -1,0 +1,45 @@
+body{
+    background-image: url('../Images/bill.jpg');
+    background-size:100%;
+    background-repeat: none;
+}
+.rece {
+	text-align: left;
+	
+	margin-left:auto;
+    margin-right: auto;
+    margin-bottom: auto;
+	background:  rgba(250, 248, 250,0);
+	font-size: 20px;
+	width: 400px;
+	padding: 25px 25px 25px 25px; 
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+	
+}
+.button {
+    margin-left:750px;
+    margin-top: auto;
+    background-color: rgb(192, 192, 211); /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .button1{
+    margin-left:50px;
+    background-color: rgb(192, 192, 211); /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 20px;
+  }

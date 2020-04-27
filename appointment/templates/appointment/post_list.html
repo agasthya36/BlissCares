@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+	<head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/post_list.css' %}">        
+   	</head>
+
+   	<body>
+   		<div class="post">
+   			<br><br>
+   		{% for i in post_list %}
+		{% csrf_token %}
+		<div class='plist'>
+		<h1 style='color:red;font-family: Lucida Sans,Lucida Sans Regular;'><a href="{% url 'postdetails' pk=i.pk %}">{{i.title}}</a><br></h1>
+		{{i.description | truncatewords:15}}
+		</div>
+		{% endfor %}
+		</div>
+		<div class='img'></div>
+		<a href="{% url 'addpost' %}" class="button">Add post</a>
+		<a href="{% url 'home1' %}" class="button1">Home</a>
+		
+   	</body>
+</html>

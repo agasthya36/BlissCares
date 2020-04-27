@@ -1,0 +1,54 @@
+
+.img{
+  
+  position: absolute;
+  top:10px;
+  left:45%;
+  width:50%;
+  height:500px;
+  background-image: url('../Images/forum.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button {
+
+  background-color: #FF8C00; /* Green */
+  border: none;
+  color: white;
+  margin-left: 15%;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.button1 {
+
+  background-color: #FF8C00; /* Green */
+  border: none;
+  color: white;
+  margin-left: 2%;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.post{
+	margin-left: 6%;
+	font-size: 20px;
+}
+.plist{
+  text-align: left;
+	margin-top: 10px;
+	margin-left:10px;
+	margin-right: auto;
+	background:  #FFE4E1;
+	font-size: 15 px;
+	width: 700px;
+	padding: 10px 10px 10px 10px; 
+	border-radius: 10px;
+}

@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+	<head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/login.css' %}">        
+   	</head>
+
+   	<body>
+   		<div class="login_form">
+		<form method="POST" >
+			{% csrf_token %}
+		<label> USER NAME </label>
+		<input type=" text" name="username"> <br><br>
+
+		<label> PASSWORD </label> 
+		<input type="password" name="password"> <br><br>
+
+		<input type="submit" name="submit1" value="login" id="button"> <br><br>
+		</form>
+		{% for i in messages %}
+		{{i}}
+		{% endfor %}
+		<p>Dont have an account</p>
+		<a href="{% url 'signup' %}">Signup</a>
+		<a href="{% url 'home' %}">Home</a>
+		</div>
+	</body>
+</html>

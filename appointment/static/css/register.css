@@ -1,0 +1,41 @@
+body{
+	background-image: url("../Images/fd.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+.log{
+	text-align: right;
+	margin-right:40px;
+	
+	
+}
+
+
+
+.reg_form {
+	text-align: center;
+	margin-top: 10%;
+	margin-left:auto;
+	
+	background:skyblue;
+	font-size: 15 px;
+	width: 275px;
+	padding: 30px 10px 30px 10px; 
+	border-radius: 10px;
+	
+}
+
+.button {
+margin-left: auto;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+}

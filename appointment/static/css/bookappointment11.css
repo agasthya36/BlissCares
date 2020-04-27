@@ -1,0 +1,28 @@
+body{
+    background-image: linear-gradient(to left, rgba(235, 226, 147, 0), rgb(210, 235, 101));
+}
+.hosp {
+	text-align: left;
+	margin-top: 8%;
+	margin-left:700px;
+	margin-right: auto;
+	background:  #FFE4E1;
+	font-size: 15 px;
+	width: 400px;
+	padding: 25px 25px 25px 25px; 
+	border-radius: 10px;
+
+	
+}
+.button {
+
+    background-color: #BC8F8F; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+  }

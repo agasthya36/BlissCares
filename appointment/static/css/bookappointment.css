@@ -1,0 +1,55 @@
+body{
+	background-image: url("../Images/appointment.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+.appointment {
+	text-align: left;
+	margin-top: 8%;
+	margin-left:10px;
+	margin-right: auto;
+	background:  #FFE4E1;
+	font-size: 15 px;
+	width: 400px;
+	padding: 25px 25px 25px 25px; 
+	border-radius: 10px;
+
+	
+}
+
+h3{
+	color: red;
+
+}
+
+#button1{
+
+  background-color: #BDB76B; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  margin-top: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+
+}
+
+#button {
+
+  background-color: #BC8F8F; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+}
+form {display:table}
+p {display:table-row}

@@ -1,0 +1,78 @@
+.navbar-inverse .navbar-brand {
+    color: rgb(39, 5, 192);
+    font-size: 500px;
+    font-weight: 500;
+    text-align:left
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color:rgb(255, 131, 122);
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    background: lightsalmon;
+    color: black;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    background: lightsalmon;
+    color: black;
+}
+
+body {
+    font-family: lato;
+    color: white;
+    background-image: url("../Images/home.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+html {
+    height: 100%;
+}
+
+
+h1 {
+	color: red;
+}
+
+#getstarted {
+    width: 80%;
+    border: 2px solid #bdc3c7;
+    margin: 40px auto;
+    padding: 10px;
+    margin-top: 70px;
+    font-size: 1.7rem;
+    background: rgba(127,127,127,0.5);
+}
+#getstarted p {
+    font-family: "source sans pro";
+    color: black;
+}
+
+#getstarted h2 {
+    color: #2c3e50;
+    font-family: "source sans pro";
+    font-weight: 900;
+}
+
+#getstarted h2 + p {
+    border-left: 7px solid #bdc3c7;
+    padding-left: 4px;
+}
+
+
+.button {
+
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+}

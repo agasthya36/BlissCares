@@ -1,0 +1,49 @@
+.navbar-inverse .navbar-brand {
+    color: lightsalmon;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color:lightsalmon;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    background: lightsalmon;
+    color: black;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    background: lightsalmon;
+    color: black;
+}
+
+html {
+    height: 100%;
+}
+
+
+
+body{
+	font-family: lato;
+    color: #000080;
+
+    background-image: url("../Images/home1.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+.content {
+    padding-top: 35%;
+    text-align: center;
+    font-size: 500px;
+}
+.content a  {
+    color: black;
+}
+
+.content a:hover {
+    color: black;
+}
+mark{
+    background-color:red;
+}

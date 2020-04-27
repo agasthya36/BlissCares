@@ -1,0 +1,34 @@
+body{
+    background-color: lightskyblue;
+    background-image: url("../Images/del12.jpg");
+    background-size: 100%;
+}
+.del{
+	text-align: left;
+    margin-top:300px;
+    align-self: center;
+	background:  rgba(141, 185, 196,0.3);
+	font-size: 30 px;
+	width: 250px;
+	padding: 50px; 
+    border-radius: 10px;
+    font-size: x-large;
+
+	
+}
+.button {
+
+    background-color: rgb(148, 87, 127); /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size:15px;
+  }
+  .app{
+      width:200px;
+      height:50px;
+  }

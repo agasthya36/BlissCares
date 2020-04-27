@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+	<head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/register.css' %}">        
+   	</head>
+
+   	<body>
+   		<div class="reg_form">
+   		<form method="POST">
+			{% csrf_token %}
+			{{form.username.label}}   <br> {{form.username}} <br><br>
+			{{form.email.label}} <br> {{form.email}} <br><br>
+			{{form.password1.label}} <br> {{form.password1}} <br><br>
+			{{form.password2.label}} <br> {{form.password2}} <br><br>
+			<input type="submit" name="submit1"  class="button">
+			{{form.errors}}
+			
+		</form>
+		</div>
+
+		<br><br>
+		<div class="log">
+		<p>Already have an account?</p>
+		<a href="{% url 'loginuser' %}" class="button">login</a>
+		<a href="{% url 'home' %}" class="button">Home</a>
+		</div>
+
+		<br><br>
+   	</body>
+
+
+
+
+	

@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+	<head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/selectdoctor1.css' %}">        
+	   </head>
+	   <body><form method="POST">
+	{% csrf_token %}
+{% for i in dnames %}
+<center><h1 style='color: red;'>Please Select Your Doctor...</h1></center>
+<div class='doctor'>
+<label ><input type="radio" name="doctor" value="{{i}}">
+{{i}}</label><br>
+{% endfor %}
+<input type="submit" name="submit2" value="Submit" class='button'><br>
+{% for i in messages %}
+{{i}}
+{% endfor %}
+
+</div>
+</body>

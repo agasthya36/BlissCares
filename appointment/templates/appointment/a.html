@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+	<head>
+        
+		<link rel="stylesheet" href="{% static 'css/a1.css' %}">        
+	   </head><form method="POST">
+	{% csrf_token %}
+	<div class='del'>
+<input type="text" name="id" class='app' placeholder="Enter appointment_id">
+<input type="submit" name="submit4" value="Submit" class='button'>
+</form>
+{% for i in messages  %}
+{{i}}
+{% endfor %}
+</div>
+<a href="{% url 'home1' %}" >Home</a>
+</html>

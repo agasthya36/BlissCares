@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+	<head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/bookappointment11.css' %}">        
+	   </head>
+	   <body><form method="POST">
+	{% csrf_token %}
+	<center><h1 style='color: blue;'>Available Hospitals and Timings ...</h1></center>
+	<div class='hosp'> 
+{% for i,k in hospital_list.items %}
+<label><div><input type="radio" name="selected_hospital" value="{{i}}">{{i}}</label>
+<select  name="time">
+	{% for j in k %}
+</br>
+<option value="{{j}}">{{j}}<br></option></div>
+	{% endfor %}
+</div>	
+</select>
+<br>
+<br>
+
+{% endfor %}
+<br><br><br><input type="submit" name="submit3" value="Submit" class='button'></form>
+</form>
+{% for i in messages %}
+{{i}}
+{% endfor %}
+</body>
+
+</html>
